@@ -1,0 +1,49 @@
+```
+selenium.common.exceptions.WebDriverException: Message: Expected to read a START_MAP but instead have: END. Last 0 characters read:
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: '32eae3cfa974', ip: '10.0.2.100', os.name: 'Linux', os.arch: 'amd64', os.version: '4.18.0-383.el8.x86_64', java.version: '11.0.11'
+Driver info: driver.version: unknown
+Stacktrace:
+org.openqa.selenium.json.JsonException: Expected to read a START_MAP but instead have: END. Last 0 characters read:
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: '32eae3cfa974', ip: '10.0.2.100', os.name: 'Linux', os.arch: 'amd64', os.version: '4.18.0-383.el8.x86_64', java.version: '11.0.11'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.json.JsonInput.expect(JsonInput.java:307)
+	at org.openqa.selenium.json.JsonInput.beginObject(JsonInput.java:229)
+	at org.openqa.selenium.json.MapCoercer.lambda$apply$1(MapCoercer.java:64)
+	at org.openqa.selenium.json.JsonTypeCoercer.lambda$buildCoercer$6(JsonTypeCoercer.java:145)
+	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:127)
+	at org.openqa.selenium.json.Json.toType(Json.java:71)
+	at org.openqa.selenium.json.Json.toType(Json.java:55)
+	at org.openqa.selenium.json.Json.toType(Json.java:50)
+	at org.openqa.selenium.grid.node.CustomLocatorHandler.execute(CustomLocatorHandler.java:113)
+	at org.openqa.selenium.remote.http.Route$CombinedRoute.handle(Route.java:336)
+	at org.openqa.selenium.remote.http.Route.execute(Route.java:68)
+	at org.openqa.selenium.grid.node.Node.execute(Node.java:240)
+	at org.openqa.selenium.grid.web.CombinedHandler.execute(CombinedHandler.java:59)
+	at org.openqa.selenium.grid.web.RoutableHttpClientFactory$1.execute(RoutableHttpClientFactory.java:72)
+	at org.openqa.selenium.grid.web.ReverseProxyHandler.execute(ReverseProxyHandler.java:92)
+	at org.openqa.selenium.grid.router.HandleSession.execute(HandleSession.java:110)
+	at org.openqa.selenium.remote.http.Route$PredicatedRoute.handle(Route.java:373)
+	at org.openqa.selenium.remote.http.Route.execute(Route.java:68)
+	at org.openqa.selenium.remote.http.Route$CombinedRoute.handle(Route.java:336)
+	at org.openqa.selenium.remote.http.Route.execute(Route.java:68)
+	at org.openqa.selenium.grid.router.Router.execute(Router.java:91)
+	at org.openqa.selenium.grid.web.EnsureSpecCompliantResponseHeaders.lambda$apply$0(EnsureSpecCompliantResponseHeaders.java:34)
+	at org.openqa.selenium.remote.http.Filter$1.execute(Filter.java:64)
+	at org.openqa.selenium.remote.http.Route$CombinedRoute.handle(Route.java:336)
+	at org.openqa.selenium.remote.http.Route.execute(Route.java:68)
+	at org.openqa.selenium.remote.http.Route$CombinedRoute.handle(Route.java:336)
+	at org.openqa.selenium.remote.http.Route.execute(Route.java:68)
+	at org.openqa.selenium.remote.AddWebDriverSpecHeaders.lambda$apply$0(AddWebDriverSpecHeaders.java:35)
+	at org.openqa.selenium.remote.ErrorFilter.lambda$apply$0(ErrorFilter.java:44)
+	at org.openqa.selenium.remote.http.Filter$1.execute(Filter.java:64)
+	at org.openqa.selenium.remote.ErrorFilter.lambda$apply$0(ErrorFilter.java:44)
+	at org.openqa.selenium.remote.http.Filter$1.execute(Filter.java:64)
+	at org.openqa.selenium.netty.server.SeleniumHandler.lambda$channelRead0$0(SeleniumHandler.java:44)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+```
